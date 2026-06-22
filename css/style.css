@@ -466,6 +466,26 @@ ul {
   font-size: 1.08rem;
 }
 
+.services-hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  position: relative;
+}
+
+.services-hero-img {
+  width: 115%;
+  max-width: 480px;
+  margin-top: -160px;
+  margin-right: -40px;
+  margin-bottom: 24px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.05));
+}
+
 .service-suite-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1308,8 +1328,19 @@ body.lightbox-open {
   }
 
   .services-hero-panel {
-    padding: 26px;
-    border-radius: 24px;
+    padding: 30px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .services-hero-right {
+    align-items: center;
+    text-align: left;
+  }
+  .services-hero-img {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .print-card-large {
