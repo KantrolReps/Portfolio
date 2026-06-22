@@ -1579,7 +1579,6 @@ body.lightbox-open {
 .dna-title-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 8px;
 }
 
@@ -1589,33 +1588,7 @@ body.lightbox-open {
   font-weight: 700;
 }
 
-.dna-slider-fake {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
-.dna-slider-fake span {
-  font-size: 0.75rem;
-  color: var(--teal);
-  font-weight: 800;
-}
-
-.slider-bar {
-  width: 60px;
-  height: 6px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.slider-fill {
-  width: 33%;
-  height: 100%;
-  background: var(--teal);
-  border-radius: 999px;
-  box-shadow: 0 0 10px var(--teal);
-}
 
 .dna-header-new p {
   color: var(--muted);
