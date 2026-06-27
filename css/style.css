@@ -1353,7 +1353,7 @@ body.lightbox-open {
   }
 
   .service-item {
-    min-height: auto;
+    min-height: 0;
   }
 
   .print-card img {
@@ -1459,6 +1459,7 @@ body.lightbox-open {
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 20px;
   padding: 24px;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -1562,8 +1563,8 @@ body.lightbox-open {
   position: relative;
   z-index: 2;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
