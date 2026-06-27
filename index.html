@@ -10,7 +10,9 @@
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -70,7 +72,7 @@
         <div class="about-left-col reveal">
           <div class="section-heading-new">
             <span class="eyebrow-new">SOBRE NÓS</span>
-            <h2>A Kantrol une presença digital e automação para empresas que querem crescer com organização.</h2>
+            <h1>A Kantrol une presença digital e automação para empresas que querem crescer com organização.</h1>
             <p>
               Criamos soluções práticas para pequenas e médias empresas reduzirem tarefas manuais,
               apresentarem melhor seus serviços e atenderem clientes com mais agilidade.
@@ -245,36 +247,36 @@
         <div class="portfolio-gallery reveal">
           <div class="gallery-heading">
             <span class="eyebrow">Projetos de site</span>
-            <h3>Abra os prints para visualizar os detalhes do layout.</h3>
-            <p>Clique em qualquer imagem para ver em tamanho maior.</p>
           </div>
 
-          <div class="gallery-grid" aria-label="Galeria de prints de sites">
-            <button class="gallery-card gallery-card-featured" type="button" data-lightbox-src="assets/print site 1.png"
-              data-lightbox-title="Print de site 1">
-              <img src="assets/print site 1.png" alt="Print de site 1" />
-              <span>Abrir imagem</span>
-            </button>
-            <button class="gallery-card" type="button" data-lightbox-src="assets/print site 2.png"
-              data-lightbox-title="Print de site 2">
-              <img src="assets/print site 2.png" alt="Print de site 2" />
-              <span>Abrir imagem</span>
-            </button>
-            <button class="gallery-card" type="button" data-lightbox-src="assets/print site 3.png"
-              data-lightbox-title="Print de site 3">
-              <img src="assets/print site 3.png" alt="Print de site 3" />
-              <span>Abrir imagem</span>
-            </button>
-            <button class="gallery-card" type="button" data-lightbox-src="assets/print site 4.png"
-              data-lightbox-title="Print de site 4">
-              <img src="assets/print site 4.png" alt="Print de site 4" />
-              <span>Abrir imagem</span>
-            </button>
-            <button class="gallery-card" type="button" data-lightbox-src="assets/print site 5.png"
-              data-lightbox-title="Print de site 5">
-              <img src="assets/print site 5.png" alt="Print de site 5" />
-              <span>Abrir imagem</span>
-            </button>
+          <div class="gallery-marquee" aria-label="Galeria de prints de sites">
+            <div class="gallery-track">
+              <button class="gallery-card gallery-card-featured" type="button" data-lightbox-src="assets/print site 1.png"
+                data-lightbox-title="Print de site 1">
+                <img src="assets/print site 1.png" alt="Print de site 1" />
+                <span>Abrir imagem</span>
+              </button>
+              <button class="gallery-card" type="button" data-lightbox-src="assets/print site 2.png"
+                data-lightbox-title="Print de site 2">
+                <img src="assets/print site 2.png" alt="Print de site 2" />
+                <span>Abrir imagem</span>
+              </button>
+              <button class="gallery-card" type="button" data-lightbox-src="assets/print site 3.png"
+                data-lightbox-title="Print de site 3">
+                <img src="assets/print site 3.png" alt="Print de site 3" />
+                <span>Abrir imagem</span>
+              </button>
+              <button class="gallery-card" type="button" data-lightbox-src="assets/print site 4.png"
+                data-lightbox-title="Print de site 4">
+                <img src="assets/print site 4.png" alt="Print de site 4" />
+                <span>Abrir imagem</span>
+              </button>
+              <button class="gallery-card" type="button" data-lightbox-src="assets/print site 5.png"
+                data-lightbox-title="Print de site 5">
+                <img src="assets/print site 5.png" alt="Print de site 5" />
+                <span>Abrir imagem</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -282,17 +284,31 @@
 
     <section class="cta-section" id="contato">
       <div class="container cta-card reveal">
-        <div>
+        <div class="cta-copy">
           <span class="eyebrow">Vamos transformar seu negócio?</span>
           <h2>Fale com a Kantrol e descubra o melhor caminho para sua empresa.</h2>
           <p>Conte o que você quer automatizar ou qual site deseja criar. A partir disso, montamos uma solução sob
             medida.</p>
         </div>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="https://wa.me/5511971732116?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Kantrol." target="_blank" rel="noopener noreferrer">Chamar no
-            WhatsApp</a>
-          <a class="btn btn-outline light" href="mailto:operacoes@kantrol.com.br?subject=Contato%20via%20Site%20-%20Kantrol">Enviar e-mail</a>
-        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="contact-name">Nome</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-email">E-mail</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-phone">Telefone ou WhatsApp</label>
+            <input id="contact-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="form-row">
+            <label for="contact-message">Mensagem</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-primary contact-submit" type="submit">Enviar mensagem</button>
+        </form>
       </div>
     </section>
   </main>
@@ -412,6 +428,8 @@
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
