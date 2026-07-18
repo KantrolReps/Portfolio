@@ -65,7 +65,7 @@ ul {
   margin-inline: auto;
 }
 
-.section-paddi1ng {
+.section-padding {
   padding: 110px 0;
 }
 
@@ -616,6 +616,7 @@ ul {
   overflow: hidden;
   margin-inline: max(-28px, calc((1380px - 100vw) / 2));
   padding: 6px 0 12px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
 }
 
