@@ -65,7 +65,7 @@ ul {
   margin-inline: auto;
 }
 
-.section-padding {
+.section-paddi1ng {
   padding: 110px 0;
 }
 
@@ -431,6 +431,7 @@ ul {
 
 .services-section {
   position: relative;
+  padding-bottom: 0 !important;
   background:
     linear-gradient(180deg, #f6f9fc 0%, #edf4f7 100%);
   color: #172235;
